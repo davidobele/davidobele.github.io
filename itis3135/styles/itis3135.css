@@ -10,17 +10,18 @@ body {
     min-height: 100vh;
     text-align: center;
     margin: 0;
+    overflow: hidden;
     box-sizing: border-box;
     background-color: #895129;
     color: white;
 }
 
-.image {
-    max-width: 400px;
-    max-height: 400px;
-}
-
-.footer {
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
     bottom: 0;
     width: 100%;
 }
