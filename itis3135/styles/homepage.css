@@ -12,7 +12,7 @@ body {
     margin: 0;
     overflow: hidden;
     box-sizing: border-box;
-    background-color: black;
+    background-color: #895129;
     color: white
 }
 
@@ -24,7 +24,18 @@ i {
     transition: opacity 0.6s ease;
 }
 
-.footer {
+.one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     bottom: 0;
     width: 100%;
