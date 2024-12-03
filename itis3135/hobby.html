@@ -42,11 +42,10 @@
             height: 300px;
         }
         figcaption {
-            margin-bottom: 1em;
+            padding-bottom: 1em;
         }
         main {
-            display: flex;
-            flex-direction: column;
+            flex: 1;
             margin: 0 0.67em;
         }
         main section {
@@ -64,19 +63,16 @@
         main section > .active {
             display: block; 
         }
-        ul{
+        main section article ul{
             list-style-type: none;
             text-align: left;
+            padding: 1em;
         }
         footer {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
         }
     </style>
 </head>
@@ -106,21 +102,21 @@
         <section>
             <article class="active">
                 <h2>Introduction to Soccer</h2>
-                <p>Soccer, or football as it’s known outside North America, is a sport with a vast and inclusive following. It’s played by millions around the globe, from amateur neighborhood teams to high-profile international leagues and tournaments. The game is enjoyed by people of all ages and skill levels, which has helped make it one of the world’s most beloved sports. Soccer legends like Pelé, Diego Maradona, and Lionel Messi have turned soccer into more than just a sport; they’ve inspired entire cultures and generations with their talent, dedication, and love for the game.</p>
-                <p>The game’s simplicity makes it accessible to virtually anyone, anywhere. A ball and an open space are all you need to start playing, making it easy for people from all walks of life to join in. Communities come together around soccer, forming local teams and fan groups, with the sport serving as a common language that unites people across social and economic backgrounds. This sense of community and passion has led soccer to become a key part of the identity for countries and fans worldwide.</p>
+                <p>Soccer, or football as it's known outside North America, is a sport with a vast and inclusive following. It's played by millions around the globe, from amateur neighborhood teams to high-profile international leagues and tournaments. The game is enjoyed by people of all ages and skill levels, which has helped make it one of the world's most beloved sports. Soccer legends like Pelé, Diego Maradona, and Lionel Messi have turned soccer into more than just a sport; they've inspired entire cultures and generations with their talent, dedication, and love for the game.</p>
+                <p>The game's simplicity makes it accessible to virtually anyone, anywhere. A ball and an open space are all you need to start playing, making it easy for people from all walks of life to join in. Communities come together around soccer, forming local teams and fan groups, with the sport serving as a common language that unites people across social and economic backgrounds. This sense of community and passion has led soccer to become a key part of the identity for countries and fans worldwide.</p>
                 <img src="images/view.jpg" alt="a soccer stadium">
                 <figcaption>Samsun 19 Mayıs Stadium in Turkey</figcaption>
             </article>
             <article>
                 <h2>What is Soccer?</h2>
                 <p>Soccer is a team sport played between two teams of eleven players on a rectangular field with a goal at each end. The objective of the game is simple yet thrilling: to score more goals than the opposing team by advancing the ball into their net. Each game is divided into two halves, typically lasting 45 minutes each, with a short halftime break. While the rules may be straightforward, soccer requires a high level of teamwork, strategy, and individual skill, creating a captivating experience for players and spectators alike.</p>
-                <p>The beauty of soccer lies in its blend of simplicity and complexity. While the basic rules are easy to grasp, there’s immense room for strategic depth. Teams work on positioning, passing, and attacking sequences to break down defenses, while defenders craft tactics to protect their goal. The unique balance of physicality and skill creates a dynamic and exciting game, where quick reflexes, mental resilience, and tactical foresight play essential roles. This duality of simplicity and sophistication is what makes soccer so widely appreciated around the world.</p>
+                <p>The beauty of soccer lies in its blend of simplicity and complexity. While the basic rules are easy to grasp, there's immense room for strategic depth. Teams work on positioning, passing, and attacking sequences to break down defenses, while defenders craft tactics to protect their goal. The unique balance of physicality and skill creates a dynamic and exciting game, where quick reflexes, mental resilience, and tactical foresight play essential roles. This duality of simplicity and sophistication is what makes soccer so widely appreciated around the world.</p>
                 <img src="images/balls.jpg" alt="a soccer ball">
                 <figcaption>A Soccer ball</figcaption>
             </article>
             <article>
                 <h2>When was Soccer Invented?</h2>
-                <p>Soccer as we know it today began to take shape in England during the mid-19th century, with the establishment of standardized rules and the formation of organized leagues. The Football Association (FA) was founded in 1863, and soon after, clubs across the country began competing in formal competitions. However, the roots of soccer stretch back even further, with ancient civilizations like those in China, Greece, and Rome playing similar ball games that influenced the modern sport’s development.</p>
+                <p>Soccer as we know it today began to take shape in England during the mid-19th century, with the establishment of standardized rules and the formation of organized leagues. The Football Association (FA) was founded in 1863, and soon after, clubs across the country began competing in formal competitions. However, the roots of soccer stretch back even further, with ancient civilizations like those in China, Greece, and Rome playing similar ball games that influenced the modern sport's development.</p>
                 <p>The popularity of soccer grew rapidly, spreading first through Europe and then globally, eventually leading to the establishment of the Fédération Internationale de Football Association (FIFA) in 1904. In 1930, Uruguay hosted the first FIFA World Cup, an event that brought together teams from around the world and established soccer as an international sport. Since then, the World Cup has become the most-watched sporting event worldwide, capturing the hearts of billions of fans every four years and fostering a global appreciation for the game.</p>
                 <img src="images/history.jpg" alt="a picture of a stadium">
                 <figcaption>Malagueta Staduim in Malaga, Spain</figcaption>
@@ -128,20 +124,20 @@
             <article>
                 <h2>Where is Soccer Played?</h2>
                 <p>Soccer is played in nearly every corner of the world, from local parks and streets to grand stadiums that hold tens of thousands of fans. Iconic venues like Camp Nou in Spain, Old Trafford in England, and Maracanã Stadium in Brazil are cherished landmarks where historic matches have unfolded, and generations of fans gather to support their teams. These stadiums are often symbols of local pride and serve as venues for unforgettable events, creating memories that fans carry with them for life.</p>
-                <p>At the grassroots level, soccer is played on school grounds, in backyards, and in public parks, making it one of the most accessible sports. For many young fans, a dirt field and a makeshift goal are enough to foster a lifelong passion for the game. Soccer transcends geography, social status, and language, uniting fans and players across cultures. It’s a sport that truly belongs to the world, thriving in places both large and small, rural and urban, creating a universal bond among its followers.</p>
+                <p>At the grassroots level, soccer is played on school grounds, in backyards, and in public parks, making it one of the most accessible sports. For many young fans, a dirt field and a makeshift goal are enough to foster a lifelong passion for the game. Soccer transcends geography, social status, and language, uniting fans and players across cultures. It's a sport that truly belongs to the world, thriving in places both large and small, rural and urban, creating a universal bond among its followers.</p>
                 <img src="images/field.jpg" alt="a soccer field">
                 <figcaption>An Artifical Grass Soccer Field</figcaption>
             </article>
             <article>
                 <h2>Why is Soccer the World's Biggest Sport?</h2>
-                <p>Soccer’s appeal lies in its simplicity and the sense of unity it brings. It’s a game where one goal can shift the energy of a stadium, and where teamwork and perseverance are essential to success. People from all walks of life come together to support their teams, and the passion for soccer extends beyond the field, becoming a part of the culture and identity of communities worldwide. Whether at the local level or on the international stage, soccer creates a sense of pride, belonging, and excitement that few other sports can match.</p>
-                <p>Beyond the excitement, soccer fosters a deep sense of connection. Fans celebrate victories and mourn defeats together, building friendships and memories along the way. The World Cup, for instance, isn’t just a tournament but a global celebration of humanity, diversity, and sportsmanship. The game’s accessibility and inclusivity allow it to cross borders and bridge differences, reminding us of our shared human experience. Soccer isn’t just a game; it’s a powerful force that brings people together, inspiring joy, hope, and community.</p>
+                <p>Soccer's appeal lies in its simplicity and the sense of unity it brings. It's a game where one goal can shift the energy of a stadium, and where teamwork and perseverance are essential to success. People from all walks of life come together to support their teams, and the passion for soccer extends beyond the field, becoming a part of the culture and identity of communities worldwide. Whether at the local level or on the international stage, soccer creates a sense of pride, belonging, and excitement that few other sports can match.</p>
+                <p>Beyond the excitement, soccer fosters a deep sense of connection. Fans celebrate victories and mourn defeats together, building friendships and memories along the way. The World Cup, for instance, isn't just a tournament but a global celebration of humanity, diversity, and sportsmanship. The game's accessibility and inclusivity allow it to cross borders and bridge differences, reminding us of our shared human experience. Soccer isn't just a game; it's a powerful force that brings people together, inspiring joy, hope, and community.</p>
                 <img src="images/practice.jpg" alt="a picture a player shooting">
                 <figcaption>A player shoots a soccer ball</figcaption>
             </article>
             <article>
                 <h2>How is Soccer Played?</h2>
-                <p>A soccer match begins with a kickoff from the center of the field, and the game flows as players pass, dribble, and attempt to score by getting the ball into the opponent’s net. Players can use any part of their body except their hands and arms to control the ball, with goalkeepers as the only exception within their penalty area. Teams employ tactics and strategies, balancing defense with attacks, to control possession and create goal-scoring opportunities. A typical game consists of two 45-minute halves, and the team with the most goals at the end wins.</p>
+                <p>A soccer match begins with a kickoff from the center of the field, and the game flows as players pass, dribble, and attempt to score by getting the ball into the opponent's net. Players can use any part of their body except their hands and arms to control the ball, with goalkeepers as the only exception within their penalty area. Teams employ tactics and strategies, balancing defense with attacks, to control possession and create goal-scoring opportunities. A typical game consists of two 45-minute halves, and the team with the most goals at the end wins.</p>
                 <p>The strategic depth of soccer is what makes it so exciting. Coaches and players work on formations and plays, honing their movements and skills to outmaneuver the opposition. Defense requires as much precision as offense, as players block, tackle, and intercept to keep opponents from scoring. Set pieces like corner kicks, free kicks, and penalty kicks add drama and require careful planning. The dynamic nature of soccer, combined with its unpredictability, is what keeps fans and players captivated throughout each match.</p>
                 <img src="images/game.jpg" alt="a picture a soccer">
                 <figcaption>A Game of Soccer</figcaption>
