@@ -2,27 +2,116 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Home Page</title>
+		<title>Do Design</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-		<link href="itis3135/styles/itis3135.css" rel="stylesheet">
+		<style>
+			body {
+				font-family: 'Inter', sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				min-height: 100vh;
+				text-align: center;
+				margin: 0;
+				overflow: hidden;
+				box-sizing: border-box;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			div {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				background-color: black;
+				opacity: 0.5;
+				z-index: 0;
+			}
+			video {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				z-index: -1;
+			}
+			header, main, footer {
+				position: relative;
+				z-index: 1;
+				color: white;
+			}
+			header {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+			}
+			main {
+				flex: 1;
+				width: 75%
+			}
+			main p {
+				text-align: left;
+			}
+			ul {
+				list-style-type: square;
+				text-align: left;
+			}
+			footer {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				bottom: 0;
+				width: 100%;
+			}
+		</style>
 	</head>
 	<body>
+		<video autoplay muted loop>
+			<source src="images/video.mp4" type="video/mp4">
+		</video>
+		<div>
+		</div>
 		<header>
-			<h1>David Obele's Site</h1>
+			<lord-icon
+				src="https://cdn.lordicon.com/lyrrgrsl.json"
+				trigger="hover"
+				colors="primary:#ffffff">
+			</lord-icon>
+			<h1>DO Design</h1>
 		</header>
 		<main>
-			<h2>Welcome to my Webpage</h2>
-			<nav>
-				<a href="itis3135/index.html" target="_blank"><strong>ITCS 3135 </strong></a>
-			</nav>
+			<h2>DO Design Services</h2>
+			<p>DoDesign is a premier design agency that transforms visionary ideas into stunning realities. We specialize in creating bespoke solutions that blend creativity, functionality, and innovation. From brand identity and web design to marketing materials and product packaging, our talented team ensures every project resonates with your audience and sets you apart from the competition. At DoDesign, we don't just design—we craft experiences.</p>
+			<p>What we do</p>
+			<ul>
+				<li>Creative Expertise: Our team consists of top-notch designers with a passion for delivering unique and impactful designs.</li>
+				<li>Client-Centric Approach: We prioritize your needs and collaborate closely to bring your vision to life.</li>
+				<li>End-to-End Solutions: From concept development to final execution, we handle every aspect of the design process.</li>
+				<li>Cutting-Edge Tools: We use the latest technology and trends to ensure your designs are modern and effective.</li>
+				<li>Timely Delivery: We are committed to delivering high-quality work within your deadlines.</li>
+			</ul>
+			<p>At DoDesign, our mission is to elevate your brand by delivering designs that capture your story and engage your audience. Whether you need a fresh website, an eye-catching logo, or an entire rebranding campaign, we're here to make it happen. Let us take your ideas and turn them into something extraordinary.</p>
+			<p>Contact</p>
+			<p>Email: info@dodesign.com</p>
+			<p>Phone: (555) 123-4567</p>
+			<p>123 Creative Lane, Design City, DC 98765</p>
 		</main>
 		<footer class="footer">
-			<div data-include="components/footer.html"></div>
+			<p>&copy; 2024</p>
+			<p>&nbsp;<em>Live Life by Design</em>&nbsp;</p>
+			<a href="https://validator.w3.org/check?uri=" target="_blank"><img src="components/htmlValidationButton.png" alt="Valid HTML!"></a>
+			<a href="https://jigsaw.w3.org/css-validator/validator?uri=" target="_blank"><img src="components/cssValidationButton.png" alt ="Valid CSS!"></a>
 		</footer>
-		<script src="scripts/HTMLInclude.min.js"></script>
+		<script src="https://cdn.lordicon.com/lordicon.js"></script>
 	</body>
 </html>
