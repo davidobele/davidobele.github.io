@@ -8,7 +8,75 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-		<link href="itis3135/styles/itis3135.css" rel="stylesheet">
+		<style>
+			a {
+				text-decoration: none;
+				color: white;
+			}
+			h1 {
+				margin-bottom: 0;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			body {
+				font-family: 'Inter', sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				min-height: 100vh;
+				text-align: center;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				box-sizing: border-box;
+				background-color: #895129;
+				color: white;
+				display: flex;
+				flex-direction: column;
+			}
+			
+			main {
+				max-width: 1200px; 
+				width: 90%;       
+				margin: 0 auto;
+				flex: 1;
+			}
+			
+			footer {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+			}
+			
+			footer a:hover {
+				text-decoration: underline;
+			}
+			
+			@media (max-width: 1024px) {
+				main {
+					max-width: 900px;
+					width: 95%;
+				}
+			}
+			
+			@media (max-width: 768px) {
+				main {
+					max-width: 600px;
+					width: 100%;
+				}
+			}
+			
+			@media (max-width: 480px) {
+				main {
+					max-width: 100%;
+					width: 100%;
+				}
+			}
+		</style>
 	</head>
 	<body>
 		<header>
@@ -17,7 +85,7 @@
 		<main>
 			<h2>Welcome to my Webpage</h2>
 			<nav>
-				<a href="itis3135/index.html" target="_blank"><strong>ITCS 3135 </strong></a>
+				<a href="itis3135/index.html" target="_blank">ITCS 3135</a>
 			</nav>
 		</main>
 		<footer>
