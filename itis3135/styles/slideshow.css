@@ -1,0 +1,16 @@
+main section{
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+  
+#slideshow {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: opacity 1s;
+}
