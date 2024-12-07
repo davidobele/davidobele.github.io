@@ -1,27 +1,33 @@
-const images = [
-    "dog.jpg",
-    "apple.jpg",
-    "vulture.jpg",
-    "ice.jpg",
-    "doctor.jpg",
-    "octopus.jpg",
-    "ballon.jpg",
-    "envelope.jpg",
-    "lion.jpg",
-    "elephant.jpg",
-];
-  
-let currentIndex = 0;
-const slideshowElement = document.getElementById("slideshow");
-  
-function updateSlideshow() {
-    currentIndex = (currentIndex + 1) % images.length;
-    slideshowElement.style.opacity = 0; 
-  
-    setTimeout(() => {
-      slideshowElement.src = images[currentIndex];
-      slideshowElement.style.opacity = 1; 
-    }, 500); 
+let slideIndex = 1;
+
+function showSlides(n) {
+  let slides = document.getElementsByClassName("myslides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+  captionText.innerHTML = dots[slideIndex - 1].alt;
 }
-  
-setInterval(updateSlideshow, 3000); 
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
