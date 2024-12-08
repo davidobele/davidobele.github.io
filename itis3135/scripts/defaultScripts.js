@@ -1,5 +1,27 @@
 const companyName = "Decisive Ox";
 
+function greetUser(name, mood) {
+    alert(`${companyName} welcomes you, ${name}!\nWe're glad you are doing ${mood}!`);
+}
+
+function determinePolygon(number) {
+    const polygons = [
+        "Not a polygon", 
+        "Monogon",       
+        "Digon",         
+        "Triangle",      
+        "Quadrilateral", 
+        "Pentagon",      
+        "Hexagon",       
+        "Heptagon",      
+        "Octagon",       
+        "Nonagon",     
+        "Decagon"        
+    ];
+    const polygonName = polygons[number] || `Polygon with ${number} sides`;
+    alert(`A polygon with ${number} sides is called a ${polygonName}.`);
+}
+
 function updateCurrentTime() {
     const now = new Date();
     const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
@@ -20,28 +42,6 @@ function processForm() {
     } else {
         alert("Please complete all fields correctly.");
     }
-}
-
-function greetUser(name, mood) {
-    alert(`${companyName} welcomes you, ${name}!\nWe're glad you are doing ${mood}!`);
-}
-
-function determinePolygon(number) {
-    const polygons = [
-        "Not a polygon", // 0 sides
-        "Monogon",       // 1 side
-        "Digon",         // 2 sides
-        "Triangle",      // 3 sides
-        "Quadrilateral", // 4 sides
-        "Pentagon",      // 5 sides
-        "Hexagon",       // 6 sides
-        "Heptagon",      // 7 sides
-        "Octagon",       // 8 sides
-        "Nonagon",       // 9 sides
-        "Decagon"        // 10 sides
-    ];
-    const polygonName = polygons[number] || `Polygon with ${number} sides`;
-    alert(`A polygon with ${number} sides is called a ${polygonName}.`);
 }
 
 function provideOxWisdom() {
