@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYO Intro</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="styles/default.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>David Obele ITIS 3135</h1>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Buid Your Own Introduction Page</h2>  
+        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page</h3>
+        <form id="surveyForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="David Obele" required><br><br>
+    
+            <label for="mascot">Mascot:</label>
+            <input type="text" id="mascot" name="mascot" value="Decisive Ox" required><br><br>
+    
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image" accept=".png, .jpg" required><br><br>
+    
+            <label for="caption">Image Caption:</label>
+            <input type="text" id="caption" name="caption" value="Your Caption" required><br><br>
+    
+            <label for="personalBackground">Personal Background:</label>
+            <input type="text" id="personalBackground" name="personalBackground" value="Your Background" required><br><br>
+    
+            <label for="professionalBackground">Professional Background:</label>
+            <input type="text" id="professionalBackground" name="professionalBackground" value="Your Professional Background" required><br><br>
+    
+            <label for="academicBackground">Academic Background:</label>
+            <input type="text" id="academicBackground" name="academicBackground" value="Your Academic Background" required><br><br>
+    
+            <label for="webDevBackground">Background in Web Development:</label>
+            <input type="text" id="webDevBackground" name="webDevBackground" value="Your Web Development Background" required><br><br>
+    
+            <label for="platform">Primary Computer Platform:</label>
+            <input type="text" id="platform" name="platform" value="HP Pavilion" required><br><br>
+    
+            <label for="courses">Courses Currently Taking:</label>
+            <div id="courseContainer">
+                <input type="text" name="courses[]" placeholder="ITIS 3135">
+            </div>
+            <button type="button" id="addCourse">Add Course</button><br><br>
+    
+            <label for="funnyThing">Funny Thing:</label>
+            <input type="text" id="funnyThing" name="funnyThing" value="Your Funny Thing"><br><br>
+    
+            <label for="anythingElse">Anything Else?</label>
+            <input type="text" id="anythingElse" name="anythingElse" value="Your Anything Else"><br><br>
+    
+            <label>
+                <input type="checkbox" id="agree" name="agree" required>
+                I understand that what is on this page is not password protected and I will not put anything here that I don't want publicly available.
+            </label>
+            <br><br>
+    
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+        <div id="output"></div>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/byo.js"></script>
+</body>
+</html>
