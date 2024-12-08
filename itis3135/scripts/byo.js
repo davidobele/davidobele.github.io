@@ -1,10 +1,9 @@
-// Function to prevent form submission if fields are empty
 document.getElementById('surveyForm').addEventListener('submit', function (event) {
     let form = event.target;
     let inputs = form.querySelectorAll('input[required]');
     let allFilled = true;
 
-    inputs.forEach(input => {
+    inputs.forEach((input) => {
         if (input.value.trim() === '') {
             allFilled = false;
         }
@@ -16,7 +15,6 @@ document.getElementById('surveyForm').addEventListener('submit', function (event
     }
 });
 
-// Function to add new course text box
 document.getElementById('addCourse').addEventListener('click', function () {
     let courseContainer = document.getElementById('courseContainer');
     let newCourseDiv = document.createElement('div');
@@ -39,14 +37,12 @@ document.getElementById('addCourse').addEventListener('click', function () {
     courseContainer.appendChild(newCourseDiv);
 });
 
-// Function to display submitted form data and hide the form
 document.getElementById('surveyForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    // Gather data from form fields
     let form = event.target;
     let output = document.getElementById('output');
-    output.innerHTML = ''; // Clear previous output
+    output.innerHTML = ''; 
 
     let formData = {
         name: form.name.value,
@@ -58,12 +54,11 @@ document.getElementById('surveyForm').addEventListener('submit', function (event
         academicBackground: form.academicBackground.value,
         webDevBackground: form.webDevBackground.value,
         platform: form.platform.value,
-        courses: Array.from(form.querySelectorAll('input[name="courses[]"]')).map(input => input.value),
+        courses: Array.from(form.querySelectorAll('input[name="courses[]"]')).map((input) => input.value),
         funnyThing: form.funnyThing.value,
-        anythingElse: form.anythingElse.value,
+        anythingElse: form.anythingElse.value
     };
 
-    // Create the new display content
     let content = `<h2>${formData.name}'s Introduction</h2>`;
 
     if (formData.image) {
@@ -84,20 +79,17 @@ document.getElementById('surveyForm').addEventListener('submit', function (event
         <p><strong>Anything Else?</strong> ${formData.anythingElse}</p>
         <p><strong>Courses Currently Taking:</strong></p>`;
 
-    formData.courses.forEach(course => {
+    formData.courses.forEach((course) => {
         if (course.trim() !== '') {
             content += `<p>${course}</p>`;
         }
     });
 
-    // Display the submitted data and add a reset button
     content += '<button id="resetForm">Reset Form</button>';
     output.innerHTML = content;
 
-    // Hide the form
     form.style.display = 'none';
 
-    // Add event listener for the reset button to show the form again
     document.getElementById('resetForm').addEventListener('click', function () {
         form.style.display = 'block';
         output.innerHTML = '';
@@ -105,5 +97,4 @@ document.getElementById('surveyForm').addEventListener('submit', function (event
     });
 });
 
-// Reset form functionality to reset input fields
 document.getElementById('surveyForm').reset();
