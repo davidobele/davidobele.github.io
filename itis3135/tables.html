@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="styles/default.css" rel="stylesheet">
+    <link href="styles/table.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>David Obele ITIS 3135</h1>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Activity #2 - HTML Tables - Company</h2>
+        <h3>My Tabular Data</h3>
+        <ol>
+            <li>David John - davidjohn@gmail.com</li>
+            <li>Moses Smith - mosessmith@gmail.com</li>
+            <li>Jimmy Horn - jimmyhornh@gmail.com</li>
+            <li>Oxlade Chamberlin -oxladechamberlin@gmail.com</li>
+            <li>David Obele - davidobele@gmail.com</li>
+            <li>Jonathan Gomez - jonathangomez@gmail.com</li>
+            <li>Mary O'Hara - maryohara@gmail.com</li> 
+        </ol>
+    
+        <h3>Employee Data in Simple Table</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>David John</td>
+                <td>davidjohn@gmail.com</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Moses Smith</td>
+                <td>mosessmith@gmail.com</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Jimmy Horn</td>
+                <td>jimmyhornh@gmail.com</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Oxlade Chamberlin</td>
+                <td>oxladechamberlin@gmail.com</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>David Obele</td>
+                <td>davidobele@gmail.com</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Jonathan Gomez</td>
+                <td>jonathangomez@gmail.com</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Mary O'Hara</td>
+                <td>maryohara@gmail.com</td>
+                <td>7</td>
+            </tr>
+        </table>
+        <h3>Employee Data in Complex Table</h3>
+        <figure>
+            <figcaption>Employee Information</figcaption>
+            <table class="complex-table">
+                <tr>
+                    <th>Category</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                    <th>Monthly Salary</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">Marketing</td>
+                    <td>David John</td>
+                    <td>davidjohn@gmail.com</td>
+                    <td>5</td>
+                    <td>$4,000</td>
+                </tr>
+                <tr>
+                    <td>Moses Smith</td>
+                    <td>mosessmith@gmail.com</td>
+                    <td>3</td>
+                    <td>$3,500</td>
+                </tr>
+                <tr>
+                    <td>Jimmy Horn</td>
+                    <td>jimmyhornh@gmail.com</td>
+                    <td>2</td>
+                    <td>$3,200</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Sales</td>
+                    <td>Oxlade Chamberlin</td>
+                    <td>oxladechamberlin@gmail.com</td>
+                    <td>4</td>
+                    <td>$3,800</td>
+                </tr>
+                <tr>
+                    <td>David Obele</td>
+                    <td>davidobele@gmail.com</td>
+                    <td>6</td>
+                    <td>$4,200</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">HR</td>
+                    <td>Jonathan Gomez</td>
+                    <td>jonathangomez@gmail.com</td>
+                    <td>8</td>
+                    <td>$4,500</td>
+                </tr>
+                <tr>
+                    <td>Mary O'Hara</td>
+                    <td>maryohara@gmail.com</td>
+                    <td>7</td>
+                    <td>$4,700</td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <th colspan="3">Total Years of Service</th>
+                        <th>35</th>
+                        <th>$27,900</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </figure>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

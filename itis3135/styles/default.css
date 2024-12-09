@@ -69,3 +69,17 @@ section {
         width: 100%;
     }
 }
+
+ol {
+    list-style-position: inside; 
+}
+
+table {
+    margin: 0 auto;
+    margin-bottom: 1em;
+    border: 1px solid w
+}
+
+th, td {
+    border: 1px solid white
+}
