@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="styles/default.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>David Obele ITIS 3135</h1>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>HTML Form - Company</h2>
+        <form action="#" method="POST">
+            <label for="name">Full Name: </label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required size="30">
+            <br><br>
+            
+            <label for="phone">Phone Number: </label>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <br><br>
+
+            <label for="email">Email Address: </label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required size="30">
+            <br><br>
+            
+            <fieldset>
+                <legend>What are you interested in?</legend>
+                <label>
+                    <input type="checkbox" name="interests" value="consulting"> Business Consulting
+                </label><br>
+                <label>
+                    <input type="checkbox" name="interests" value="design"> Custom Design Services
+                </label><br>
+                <label>
+                    <input type="checkbox" name="interests" value="strategy"> Strategic Planning
+                </label>
+            </fieldset>
+            <br>
+            
+            <fieldset>
+                <legend>Preferred Contact Method:</legend>
+                <label>
+                    <input type="radio" name="contact_method" value="phone" required> Phone
+                </label><br>
+                <label>
+                    <input type="radio" name="contact_method" value="email" required> Email
+                </label><br>
+                <label>
+                    <input type="radio" name="contact_method" value="none" required> No Preference
+                </label>
+            </fieldset>
+            <br>
+            
+            <label for="budget">Your Budget: </label>
+            <select id="budget" name="budget" required>
+                <option value="" disabled selected>Select your budget</option>
+                <option value="low">Under $1,000</option>
+                <option value="medium">$1,000 - $5,000</option>
+                <option value="high">Over $5,000</option>
+            </select>
+            <br><br>
+            
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form> 
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
