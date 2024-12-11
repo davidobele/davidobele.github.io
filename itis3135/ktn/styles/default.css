@@ -32,6 +32,7 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 header section {
     flex: 1;
@@ -68,6 +69,7 @@ footer section{
     width: 100%;
     border-top: 1px solid white;
     background-color: #0092cf;
+    z-index: 1;
 }
 
 .testimonial-grid {
@@ -81,7 +83,7 @@ footer section{
     padding: 20px;
 }
 .testimonial {
-    background-color: rgba(0,130,181,0.2);
+    background-color: rgba(0,130,181);
     padding: 15px;
     border-radius: 10px;
 }
@@ -113,6 +115,22 @@ button {
     padding: 20px;
     background-color: rgba(0,130,181,0.8);
 }
+.slide-navigation {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+.nav-btn {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    user-select: none;
+}
 .contact-container {
     display: flex;
     justify-content: space-around;
@@ -125,4 +143,23 @@ form input, form textarea {
     width: 100%;
     margin: 10px 0;
     padding: 10px;
+}
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2; 
+}
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1; 
 }

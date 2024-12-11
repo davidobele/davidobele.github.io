@@ -1,11 +1,33 @@
 let slideIndex = 0;
 const slides = document.querySelectorAll('.slide');
+const prevBtn = document.getElementById('prevSlide');
+const nextBtn = document.getElementById('nextSlide');
 
-function showSlides() {
-    slides.forEach((slide) => slide.style.display = 'none');
-    slideIndex = (slideIndex + 1) % slides.length;
-    slides[slideIndex].style.display = 'block';
+function showSlide(index) {
+    slides.forEach(slide => slide.style.display = 'none');
+    slides[index].style.display = 'block';
 }
 
-showSlides();
-setInterval(showSlides, 5000);
+function nextSlide() {
+    slideIndex = (slideIndex + 1) % slides.length;
+    showSlide(slideIndex);
+}
+
+function prevSlide() {
+    slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+    showSlide(slideIndex);
+}
+
+showSlide(slideIndex);
+
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
+
+let autoAdvanceInterval = setInterval(nextSlide, 5000);
+
+[prevBtn, nextBtn].forEach(btn => {
+    btn.addEventListener('click', () => {
+        clearInterval(autoAdvanceInterval);
+        autoAdvanceInterval = setInterval(nextSlide, 5000);
+    });
+});
