@@ -1,4 +1,4 @@
-const seeMoreBtn = document.getElementById('seeMoreBtn');
+const seeMoreBtn = document.getElementById('seemorebtn');
 const testimonials = document.querySelectorAll('.testimonial-hidden');
 let currentTestimonialIndex = 0;
 
