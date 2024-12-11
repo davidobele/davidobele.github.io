@@ -20,14 +20,14 @@ function prevSlide() {
 
 showSlide(slideIndex);
 
-nextBtn.addEventListener('click', nextslide);
-prevBtn.addEventListener('click', prevslide);
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
 
-let autoAdvanceInterval = setInterval(nextslide, 5000);
+let autoAdvanceInterval = setInterval(nextSlide, 5000);
 
 [prevBtn, nextBtn].forEach((btn) => {
     btn.addEventListener('click', () => {
         clearInterval(autoAdvanceInterval);
-        autoAdvanceInterval = setInterval(nextslide, 5000);
+        autoAdvanceInterval = setInterval(nextSlide, 5000);
     });
 });

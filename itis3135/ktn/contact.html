@@ -16,16 +16,15 @@
     </header>
     <main>
         <video autoplay muted loop>
-			<source src="images/video.mp4" type="video/mp4">
-		</video>
-        <div class="mask">
-		</div>
+            <source src="images/video.mp4" type="video/mp4">
+        </video>
+        <div class="mask"></div>
         <h1>Contact Us</h1>
         <div class="contact-container">
-            <div class="contact-form">
+            <div id="formcontainer" class="contact-form">
                 <h2>Send us a Message</h2>
-                <form>
-                    <input type="text" placeholder="Your Name" required>
+                <form id="contactform">
+                    <input id="nameinput" type="text" placeholder="Your Name" required>
                     <input type="email" placeholder="Your Email" required>
                     <input type="tel" placeholder="Your Phone Number">
                     <textarea placeholder="Your Message" rows="5" required></textarea>
@@ -45,10 +44,15 @@
                 <p>Sunday: Closed</p>
             </div>
         </div>
+        <div id="thankyoucontainer" class="thank-you-message">
+            <h2>Thank You, <span id="submittername"></span>!</h2>
+            <p>We'll get back to you as soon as possible.</p>
+        </div>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/forms.js"></script>
 </body>
 </html>

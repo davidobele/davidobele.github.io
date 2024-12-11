@@ -123,7 +123,7 @@ button {
     width: 100%;
     transform: translateY(-50%);
 }
-.nav-btn {
+.navbtn {
     background-color: rgba(0,0,0,0.5);
     color: white;
     border: none;
@@ -142,15 +142,6 @@ button {
 form input, form textarea {
     width: 100%;
     margin: 10px 0;
-}
-.thank-you-message {
-    text-align: center;
-    padding: 50px;
-    background-color: rgba(0,130,181,0.2);
-    display: none;
-}
-#formContainer {
-    transition: opacity 0.5s ease-out;
 }
 video {
     position: fixed;
