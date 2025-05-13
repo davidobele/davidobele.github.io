@@ -10,6 +10,10 @@ a {
   color: inherit;
 }
 
+h1 {
+  letter-spacing: -0.3;
+  line-height: 1;
+}
 body {
   font-family: "Inter", serif;
   font-optical-sizing: auto;
@@ -30,6 +34,10 @@ body.light-mode {
   color: black;
 }
 
+.light-mode button svg {
+  transform: rotate(360deg);
+}
+
 main {
   display: flex;
   flex: 1;
@@ -42,17 +50,48 @@ main {
 
 .socials {
   width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
 }
 
-i {
-  color: inherit;
-  font-size: 1.5em;
-  padding: 0 0.5em 0 0;
+.github,
+.instagram,
+.linkedin,
+.tiktok,
+.twitter,
+.youtube {
+  fill: currentColor;
+  font-size: 1em;
   transition: transform 0.3s ease 0;
 }
 
 .socials:hover > :not(:hover) {
   opacity: 0.4;
+}
+
+.github:hover {
+  fill: #08872b;
+}
+
+.instagram:hover {
+  fill: #fe2858;
+}
+
+.linkedin:hover {
+  fill: #0077b5;
+}
+
+.tiktok:hover {
+  fill: #2af0ea;
+}
+
+.twitter:hover {
+  fill: #1da1f2;
+}
+
+.youtube:hover {
+  fill: #ff0000;
 }
 
 button {
@@ -65,9 +104,6 @@ button {
   width: 2rem;
   height: 2rem;
   background-color: transparent;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
 }
 
 .theme-toggle svg:nth-child(1) {
