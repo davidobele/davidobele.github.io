@@ -6,14 +6,23 @@
 }
 
 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: inherit;
 }
 
 h1 {
-  letter-spacing: -0.3;
-  line-height: 1;
+  font-size: 1.875rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
 }
+
+p {
+  font-size: 1rem;
+}
+
 body {
   font-family: "Inter", serif;
   font-optical-sizing: auto;
@@ -40,16 +49,16 @@ body.light-mode {
 
 main {
   display: flex;
-  flex: 1;
   flex-direction: column;
   justify-content: center;
-  padding: 5%;
-  position: relative;
-  gap: 0.5em;
+  align-items: center;
+  flex: 1;
 }
 
 .socials {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: fit-content;
   gap: 0.5em;
 }
@@ -134,4 +143,5 @@ footer {
   fill: currentColor;
   font-size: 1em;
 }
+
 
